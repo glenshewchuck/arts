@@ -1,0 +1,8 @@
+name: My SIG Admiin
+type: theme
+base theme: claro
+description: 'A clean, accessible, and powerful Drupal administration theme based on Clario.'
+core_version_requirement: ^8 || ^9
+libraries:
+  - sigadmin/global-styling
+

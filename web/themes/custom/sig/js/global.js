@@ -7,7 +7,7 @@
 
   'use strict';
 
-  Drupal.behaviors.bootstrap_barrio_sig = {
+  Drupal.behaviors.sig = {
     attach: function (context, settings) {
 
     }
