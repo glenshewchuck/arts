@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3585a0671aa2b7f8cbf818d0eb4c5374c1b74cbb',
+        'reference' => 'f6e1f6f4df603612fbf1e714e85f1005dede58ee',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -17,6 +17,24 @@
             'install_path' => __DIR__ . '/../asm89/stack-cors',
             'aliases' => array(),
             'reference' => 'b9c31def6a83f84b4d4a40d35996d375755f0e08',
+            'dev_requirement' => false,
+        ),
+        'aws/aws-crt-php' => array(
+            'pretty_version' => 'v1.0.2',
+            'version' => '1.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../aws/aws-crt-php',
+            'aliases' => array(),
+            'reference' => '3942776a8c99209908ee0b287746263725685732',
+            'dev_requirement' => false,
+        ),
+        'aws/aws-sdk-php' => array(
+            'pretty_version' => '3.222.5',
+            'version' => '3.222.5.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../aws/aws-sdk-php',
+            'aliases' => array(),
+            'reference' => '26596820b043db985bf7c9deb98aa2234f6054cb',
             'dev_requirement' => false,
         ),
         'chi-teck/drupal-code-generator' => array(
@@ -256,6 +274,15 @@
                 0 => '9.3.12',
             ),
         ),
+        'drupal/amazon_ses' => array(
+            'pretty_version' => '2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/amazon_ses',
+            'aliases' => array(),
+            'reference' => '2.1.1',
+            'dev_requirement' => false,
+        ),
         'drupal/asset_injector' => array(
             'pretty_version' => '2.10.0',
             'version' => '2.10.0.0',
@@ -270,6 +297,15 @@
             'replaced' => array(
                 0 => '9.3.12',
             ),
+        ),
+        'drupal/aws_secrets_manager' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/aws_secrets_manager',
+            'aliases' => array(),
+            'reference' => '2.0.1',
+            'dev_requirement' => false,
         ),
         'drupal/backup_migrate' => array(
             'pretty_version' => '5.0.1',
@@ -790,6 +826,15 @@
                 0 => '9.3.12',
             ),
         ),
+        'drupal/key' => array(
+            'pretty_version' => '1.15.0',
+            'version' => '1.15.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/key',
+            'aliases' => array(),
+            'reference' => '8.x-1.15',
+            'dev_requirement' => false,
+        ),
         'drupal/language' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -973,7 +1018,16 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3585a0671aa2b7f8cbf818d0eb4c5374c1b74cbb',
+            'reference' => 'f6e1f6f4df603612fbf1e714e85f1005dede58ee',
+            'dev_requirement' => false,
+        ),
+        'drupal/redirect_after_login' => array(
+            'pretty_version' => '2.7.0',
+            'version' => '2.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/redirect_after_login',
+            'aliases' => array(),
+            'reference' => '8.x-2.7',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1026,6 +1080,15 @@
             'replaced' => array(
                 0 => '9.3.12',
             ),
+        ),
+        'drupal/smtp' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/smtp',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
@@ -1291,6 +1354,15 @@
             'reference' => 'f640ac1bdddff06ea333a920c95bbad8872429ab',
             'dev_requirement' => false,
         ),
+        'mtdowling/jmespath.php' => array(
+            'pretty_version' => '2.6.1',
+            'version' => '2.6.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../mtdowling/jmespath.php',
+            'aliases' => array(),
+            'reference' => '9b87907a81b87bc76d19a7fb2d61e61486ee9edb',
+            'dev_requirement' => false,
+        ),
         'nikic/php-parser' => array(
             'pretty_version' => 'v4.13.2',
             'version' => '4.13.2.0',
@@ -1367,6 +1439,15 @@
             'install_path' => __DIR__ . '/../php-di/phpdoc-reader',
             'aliases' => array(),
             'reference' => '66daff34cbd2627740ffec9469ffbac9f8c8185c',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.6.0',
+            'version' => '6.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'e43bac82edc26ca04b36143a48bde1c051cfd5b1',
             'dev_requirement' => false,
         ),
         'psr/cache' => array(

@@ -1,0 +1,16 @@
+amazon_ses.settings_form:
+  title: 'Settings'
+  route_name: amazon_ses.settings_form
+  base_route: amazon_ses.settings_form
+amazon_ses.identities:
+  title: 'Verified Identities'
+  route_name: amazon_ses.identities
+  base_route: amazon_ses.settings_form
+amazon_ses.statistics:
+  title: 'Statistics'
+  route_name: amazon_ses.statistics
+  base_route: amazon_ses.settings_form
+amazon_ses.test_form:
+  title: 'Test'
+  route_name: amazon_ses.test_form
+  base_route: amazon_ses.settings_form

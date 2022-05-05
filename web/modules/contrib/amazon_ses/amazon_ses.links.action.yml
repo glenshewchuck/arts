@@ -1,0 +1,5 @@
+amazon_ses.verify_identity:
+  title: 'Add Identity'
+  route_name: amazon_ses.verify_identity
+  appears_on:
+    - amazon_ses.identities

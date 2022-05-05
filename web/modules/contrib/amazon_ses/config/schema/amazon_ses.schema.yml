@@ -1,0 +1,10 @@
+amazon_ses.settings:
+  type: config_object
+  label: Settings
+  mapping:
+    from_address:
+      type: email
+    throttle:
+      type: boolean
+    queue:
+      type: boolean

@@ -1,0 +1,25 @@
+amazon_ses.settings_form:
+  title: 'Amazon SES'
+  route_name: amazon_ses.settings_form
+  description: 'Configure the Amazon SES mail service.'
+  parent: system.admin_config_services
+amazon_ses.identities:
+  title: 'Verfied identities'
+  route_name: amazon_ses.identities
+  description: 'Amazon SES verified identities.'
+  parent: amazon_ses.settings_form
+amazon_ses.verify_identity:
+  title: 'Verify identity'
+  route_name: amazon_ses.verify_identity
+  description: 'Verify a new identity.'
+  parent: amazon_ses.identities
+amazon_ses.statistics:
+  title: 'Statistics'
+  route_name: amazon_ses.statistics
+  description: 'Amazon SES statistics.'
+  parent: amazon_ses.settings_form
+amazon_ses.test_form:
+  title: 'Test settings'
+  route_name: amazon_ses.test_form
+  description: 'Test the Amazon SES settings.'
+  parent: amazon_ses.settings_form

@@ -1,0 +1,4 @@
+administer amazon ses:
+  title: Administer Amazon SES
+  description: Administer the Amazon SES mail service.
+  restrict access: true

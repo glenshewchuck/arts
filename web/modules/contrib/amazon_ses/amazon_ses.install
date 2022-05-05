@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * The install file for the amazon_ses module.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function amazon_ses_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+    $config = \Drupal::config('amazon_ses.settings');
+    $from_address = $config->get('from_address');
+
+    if (!$from_address) {
+      $requirements['amazon_ses_from_address'] = [
+        'title' => t('Amazon SES'),
+        'value' => t('From email address not set.'),
+        'severity' => REQUIREMENT_ERROR,
+      ];
+    }
+  }
+
+  return $requirements;
+}

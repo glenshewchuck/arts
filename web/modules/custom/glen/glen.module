@@ -1,0 +1,16 @@
+<?php
+
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_user_login().
+ */
+function glen_user_login(User $user) {
+    $url = Url::fromRoute('<front>', [
+       'user' => $user->id(),
+    ]);
+//    $redirect = new RedirectResponse($url->toString());
+//    $redirect->send();
+}

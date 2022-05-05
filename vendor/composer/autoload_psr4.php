@@ -56,6 +56,7 @@ return array(
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpDocReader\\' => array($vendorDir . '/php-di/phpdoc-reader/src/PhpDocReader'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'MutableTypedData\\Test\\' => array($vendorDir . '/joachim-n/mutable-typed-data/Test/src'),
     'MutableTypedData\\Fixtures\\' => array($vendorDir . '/joachim-n/mutable-typed-data/Test/fixtures'),
     'MutableTypedData\\' => array($vendorDir . '/joachim-n/mutable-typed-data'),
@@ -66,6 +67,7 @@ return array(
     'Laminas\\Feed\\' => array($vendorDir . '/laminas/laminas-feed/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Laminas\\Diactoros\\' => array($vendorDir . '/laminas/laminas-diactoros/src'),
+    'JmesPath\\' => array($vendorDir . '/mtdowling/jmespath.php/src'),
     'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
@@ -102,5 +104,6 @@ return array(
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
     'Ckr\\Util\\' => array($vendorDir . '/ckr/arraymerger/src'),
     'CaseConverter\\' => array($vendorDir . '/joachim-n/case-converter'),
+    'Aws\\' => array($vendorDir . '/aws/aws-sdk-php/src'),
     'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src/Asm89/Stack'),
 );

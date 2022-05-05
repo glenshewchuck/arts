@@ -1,0 +1,35 @@
+amazon_ses.settings_form:
+  path: '/admin/config/services/amazon_ses/settings'
+  defaults:
+    _form: '\Drupal\amazon_ses\Form\AmazonSesSettingsForm'
+    _title: 'Amazon SES'
+  requirements:
+    _permission: 'administer amazon ses'
+amazon_ses.identities:
+  path: '/admin/config/services/amazon_ses/settings/identities'
+  defaults:
+    _form: '\Drupal\amazon_ses\Form\AmazonSesIdentitiesForm'
+    _title: 'Verified Identities'
+  requirements:
+    _permission: 'administer amazon ses'
+amazon_ses.verify_identity:
+  path: '/admin/config/services/amazon_ses/settings/verify-identity'
+  defaults:
+    _form: '\Drupal\amazon_ses\Form\AmazonSesVerifyIdentityForm'
+    _title: 'Verify Identity'
+  requirements:
+    _permission: 'administer amazon ses'
+amazon_ses.statistics:
+  path: '/admin/config/services/amazon_ses/settings/statistics'
+  defaults:
+    _controller: '\Drupal\amazon_ses\Controller\AmazonSesController::statistics'
+    _title: 'Statistics'
+  requirements:
+    _permission: 'administer amazon ses'
+amazon_ses.test_form:
+  path: '/admin/config/services/amazon_ses/settings/test'
+  defaults:
+    _form: '\Drupal\amazon_ses\Form\AmazonSesTestForm'
+    _title: 'Test settings'
+  requirements:
+    _permission: 'administer amazon ses'

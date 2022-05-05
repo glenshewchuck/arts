@@ -1,0 +1,23 @@
+{
+    "name": "drupal/amazon_ses",
+    "description": "Allows site email to be sent using Amazon SES.",
+    "type": "drupal-module",
+    "homepage": "http://drupal.org/project/amazon_ses",
+    "authors": [
+        {
+            "name": "Ben Davis (davisben)",
+            "homepage": "https://www.drupal.org/u/davisben",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "http://drupal.org/project/amazon_ses",
+        "source": "https://git.drupalcode.org/project/amazon_ses"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "aws/aws-sdk-php": "^3.54",
+        "drupal/aws_secrets_manager": "^2.0@beta"
+    }
+}

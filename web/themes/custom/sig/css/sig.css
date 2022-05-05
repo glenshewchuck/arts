@@ -3,6 +3,8 @@
  * Subtheme specific CSS.
  */
 
+
+/* Indent comments */
 article.comment .comment__meta,
 article.comment .comment__content {
  margin-left: 4em;
@@ -59,4 +61,5 @@ body.path-front main h2.views-field-title a {
 
 /* Buttons */
 input.btn { max-width:15em; }
+input.button { max-width:15em; }
 

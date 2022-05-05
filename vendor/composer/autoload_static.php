@@ -39,6 +39,8 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
         '6db5533840cb1ae1bc049452845aa88e' => __DIR__ . '/../..' . '/web/core/includes/guzzle_php81_shim.php',
+        'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
+        '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
@@ -110,6 +112,7 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -126,6 +129,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
             'Laminas\\Feed\\' => 13,
             'Laminas\\Escaper\\' => 16,
             'Laminas\\Diactoros\\' => 18,
+        ),
+        'J' => 
+        array (
+            'JmesPath\\' => 9,
         ),
         'I' => 
         array (
@@ -180,6 +187,7 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         ),
         'A' => 
         array (
+            'Aws\\' => 4,
             'Asm89\\Stack\\' => 12,
         ),
     );
@@ -386,6 +394,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'MutableTypedData\\Test\\' => 
         array (
             0 => __DIR__ . '/..' . '/joachim-n/mutable-typed-data/Test/src',
@@ -425,6 +437,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
+        ),
+        'JmesPath\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mtdowling/jmespath.php/src',
         ),
         'Invoker\\' => 
         array (
@@ -573,6 +589,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         array (
             0 => __DIR__ . '/..' . '/joachim-n/case-converter',
         ),
+        'Aws\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
+        ),
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
@@ -615,6 +635,29 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
     );
 
     public static $classMap = array (
+        'AWS\\CRT\\Auth\\AwsCredentials' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/AwsCredentials.php',
+        'AWS\\CRT\\Auth\\CredentialsProvider' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/CredentialsProvider.php',
+        'AWS\\CRT\\Auth\\Signable' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/Signable.php',
+        'AWS\\CRT\\Auth\\SignatureType' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/SignatureType.php',
+        'AWS\\CRT\\Auth\\SignedBodyHeaderType' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/SignedBodyHeaderType.php',
+        'AWS\\CRT\\Auth\\Signing' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/Signing.php',
+        'AWS\\CRT\\Auth\\SigningAlgorithm' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/SigningAlgorithm.php',
+        'AWS\\CRT\\Auth\\SigningConfigAWS' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/SigningConfigAWS.php',
+        'AWS\\CRT\\Auth\\SigningResult' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/SigningResult.php',
+        'AWS\\CRT\\Auth\\StaticCredentialsProvider' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Auth/StaticCredentialsProvider.php',
+        'AWS\\CRT\\CRT' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/CRT.php',
+        'AWS\\CRT\\HTTP\\Headers' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/HTTP/Headers.php',
+        'AWS\\CRT\\HTTP\\Message' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/HTTP/Message.php',
+        'AWS\\CRT\\HTTP\\Request' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/HTTP/Request.php',
+        'AWS\\CRT\\HTTP\\Response' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/HTTP/Response.php',
+        'AWS\\CRT\\IO\\EventLoopGroup' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/IO/EventLoopGroup.php',
+        'AWS\\CRT\\IO\\InputStream' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/IO/InputStream.php',
+        'AWS\\CRT\\Internal\\Encoding' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Internal/Encoding.php',
+        'AWS\\CRT\\Internal\\Extension' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Internal/Extension.php',
+        'AWS\\CRT\\Log' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Log.php',
+        'AWS\\CRT\\NativeResource' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/NativeResource.php',
+        'AWS\\CRT\\OptionValue' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
+        'AWS\\CRT\\Options' => __DIR__ . '/..' . '/aws/aws-crt-php/src/AWS/CRT/Options.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Drupal' => __DIR__ . '/../..' . '/web/core/lib/Drupal.php',
