@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f6e1f6f4df603612fbf1e714e85f1005dede58ee',
+        'reference' => 'e9c2619eaa0d34743ab42bd1e12efc618640d860',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -886,6 +886,15 @@
                 0 => '9.3.12',
             ),
         ),
+        'drupal/media_library_theme_reset' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/media_library_theme_reset',
+            'aliases' => array(),
+            'reference' => '8.x-1.1',
+            'dev_requirement' => false,
+        ),
         'drupal/menu_link_content' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1018,7 +1027,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f6e1f6f4df603612fbf1e714e85f1005dede58ee',
+            'reference' => 'e9c2619eaa0d34743ab42bd1e12efc618640d860',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(
