@@ -93,7 +93,9 @@
     {% if content.field_media.0 is empty %}
         <div class="something">NO MEDIA IN THIS POST</div>
     {% else %}
+<div class="alert alert-secondary">
         {{ content.field_media }}
+</div>
     {% endif %}
     {{ content | without('field_media') }}
   </div>
