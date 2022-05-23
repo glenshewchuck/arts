@@ -89,13 +89,14 @@
   {% endif %}
 
 
+
   <div{{ content_attributes }}>
-    {% if content.field_media.0 is empty %}
-        <div class="something">NO MEDIA IN THIS POST</div>
-    {% else %}
-<div class="alert alert-secondary">
+    {% if content.field_media.1 is empty %}
         {{ content.field_media }}
-</div>
+    {% else %}
+    <div class="clearfix">
+        {{ content.field_media }}
+    </div>
     {% endif %}
     {{ content | without('field_media') }}
   </div>
