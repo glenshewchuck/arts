@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9121bf8f6816b478ddc53989ba5bbc73cf53284b',
+        'reference' => '2baa1c4f084379eb2daf8e4b57644e9542568fca',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -266,6 +266,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/admin_content_notification',
             'aliases' => array(),
             'reference' => '8.x-3.8',
+            'dev_requirement' => false,
+        ),
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'reference' => '3.1.0',
             'dev_requirement' => false,
         ),
         'drupal/aggregator' => array(
@@ -667,6 +676,15 @@
             'reference' => '8.x-3.7',
             'dev_requirement' => false,
         ),
+        'drupal/customerror' => array(
+            'pretty_version' => '1.0.0-beta2',
+            'version' => '1.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/customerror',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-beta2',
+            'dev_requirement' => false,
+        ),
         'drupal/datetime' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -753,6 +771,15 @@
             'replaced' => array(
                 0 => '9.3.12',
             ),
+        ),
+        'drupal/file_delete' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/file_delete',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drupal/filter' => array(
             'dev_requirement' => false,
@@ -988,6 +1015,15 @@
                 0 => '9.3.12',
             ),
         ),
+        'drupal/password_policy' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/password_policy',
+            'aliases' => array(),
+            'reference' => '8.x-3.1',
+            'dev_requirement' => false,
+        ),
         'drupal/path' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1036,7 +1072,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9121bf8f6816b478ddc53989ba5bbc73cf53284b',
+            'reference' => '2baa1c4f084379eb2daf8e4b57644e9542568fca',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(

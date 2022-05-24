@@ -1,0 +1,13 @@
+name: Custom Error
+type: module
+description: 'Enables the creation of custom error pages for 404 and 403 errors, as well as redirects for 404s.'
+core_version_requirement: ^8.8 || ^9
+configure: customerror.settings
+
+dependencies:
+  - drupal:path_alias
+
+# Information added by Drupal.org packaging script on 2022-03-12
+version: '8.x-1.0-beta2'
+project: 'customerror'
+datestamp: 1647057893

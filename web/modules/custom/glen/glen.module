@@ -8,9 +8,17 @@ use Drupal\user\Entity\User;
  * Implements hook_user_login().
  */
 function glen_user_login(User $user) {
-    $url = Url::fromRoute('<front>', [
-       'user' => $user->id(),
-    ]);
-//    $redirect = new RedirectResponse($url->toString());
-//    $redirect->send();
+}
+
+function hook_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+/*
+  $request = \Drupal::request();
+  if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+    $title = \Drupal::service('title_resolver')->getTitle($request, $route);
+    if ($title == 'Create Article' ) {
+      $route->setDefault('_title', 'New Title');
+    }
+  }
+*/
 }
