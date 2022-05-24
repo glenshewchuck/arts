@@ -79,7 +79,7 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer>
+    <footer style="font-style: italic;" class="small font-italic text-muted">
       {{ author_picture }}
       <div{{ author_attributes }}>
         {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
@@ -88,15 +88,17 @@
     </footer>
   {% endif %}
 
-
-
   <div{{ content_attributes }}>
-    {% if content.field_media.1 is empty %}
+    {% if content.field_media is not empty %}
+      <div class="mt-3">
+      {% if content.field_media.1 is empty %}
         {{ content.field_media }}
-    {% else %}
-    <div class="clearfix">
-        {{ content.field_media }}
-    </div>
+      {% else %}
+        <div class="clearfix">
+          {{ content.field_media }}
+        </div>
+      {% endif %}
+      </div>
     {% endif %}
     {{ content | without('field_media') }}
   </div>

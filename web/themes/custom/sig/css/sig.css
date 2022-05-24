@@ -3,6 +3,11 @@
  * Subtheme specific CSS.
  */
 
+/* Content type: Article */
+.X body.path-frontpage .view-frontpage .view-content.row article footer {
+  font-style: italic !important;
+  font-size: 0.8em !important;
+}
 
 /* Indent comments */
 article.comment .comment__meta,
