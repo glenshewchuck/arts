@@ -1,0 +1,7 @@
+/web/sites/default/files
+/web/sites/default/files/php/twig
+
+# Added by Glen
+/private/styles/
+/web/sites/default/settings.local.php
+
