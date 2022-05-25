@@ -68,7 +68,17 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+
+{% set classes = [
+   'bg-light',
+   'p-3',
+   'mb-5',
+   'rounded',
+   'shadow',
+   ]
+%}
+
+<article{{ attributes }} {{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if label and not page %}
@@ -88,9 +98,14 @@
     </footer>
   {% endif %}
 
+  {{ content.field_tags }}
+
+<div class="row">
+<div class="col-4">
   <div{{ content_attributes }}>
     {% if content.field_media is not empty %}
       <div class="mt-3">
+      {# if there is more than 1 media item add a clearfix #}
       {% if content.field_media.1 is empty %}
         {{ content.field_media }}
       {% else %}
@@ -100,7 +115,17 @@
       {% endif %}
       </div>
     {% endif %}
-    {{ content | without('field_media') }}
+    {{ content.links }}
   </div>
+</div>
 
+<div class="col">
+    {# The rest of the content #}
+    {{ content | without('field_media', 'comment', 'links', 'field_tags') }}
+</div>
+</div>
+
+<div class="row">
+{{ content.comment }}
+</div>
 </article>
