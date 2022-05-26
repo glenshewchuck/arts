@@ -36,6 +36,7 @@
         "drupal/file_delete": "^1.0",
         "drupal/gin": "^3.0@beta",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/jquery_ui_accordion": "^1.1",
         "drupal/maillog": "^1.0@beta",
         "drupal/media_library_theme_reset": "^1.1",
         "drupal/module_builder": "^3.23",

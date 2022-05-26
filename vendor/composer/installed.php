@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2baa1c4f084379eb2daf8e4b57644e9542568fca',
+        'reference' => 'bb51eea091e411990102e4bf420244b8b1fb0c77',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -856,6 +856,24 @@
                 0 => '9.3.12',
             ),
         ),
+        'drupal/jquery_ui' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jquery_ui',
+            'aliases' => array(),
+            'reference' => '8.x-1.4',
+            'dev_requirement' => false,
+        ),
+        'drupal/jquery_ui_accordion' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jquery_ui_accordion',
+            'aliases' => array(),
+            'reference' => '8.x-1.1',
+            'dev_requirement' => false,
+        ),
         'drupal/jsonapi' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1072,7 +1090,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2baa1c4f084379eb2daf8e4b57644e9542568fca',
+            'reference' => 'bb51eea091e411990102e4bf420244b8b1fb0c77',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(

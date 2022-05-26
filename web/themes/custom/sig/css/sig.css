@@ -121,3 +121,25 @@ line-height: 2em;
 .js-media-library-menu li a.active {
   color: blue;
 }
+
+/* table header was white in colored table */
+div table tr th,
+div table tr th a {
+  color: grey;
+}
+
+/* media library */
+
+ui.media-library-wrapper,
+.media-library-widget-modal #media-library-wrapper ui {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-radius: .25rem;
+}
+
+ui.media-library-wrapper li,
+.media-library-widget-modal #media-library-wrapper ui li {
+  margin-right: 1em;
+}
