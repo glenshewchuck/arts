@@ -101,9 +101,10 @@
   {{ content.field_tags }}
 
 <div class="row">
+{% if content.field_media.0 is not empty %}
 <div class="col-lg-4">
   <div{{ content_attributes }}>
-    {% if content.field_media is not empty %}
+    {% if content.field_media.0 is not empty %}
       <div class="mt-3">
       {# if there is more than 1 media item add a clearfix #}
       {% if content.field_media.1 is empty %}
@@ -115,13 +116,14 @@
       {% endif %}
       </div>
     {% endif %}
-    {{ content.links }}
   </div>
 </div>
+{% endif %}
 
 <div class="col-lg">
     {# The rest of the content #}
     {{ content | without('field_media', 'comment', 'links', 'field_tags') }}
+    {{ content.links }}
 </div>
 </div>
 
@@ -129,3 +131,4 @@
 {{ content.comment }}
 </div>
 </article>
+

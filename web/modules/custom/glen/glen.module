@@ -10,7 +10,21 @@ use Drupal\user\Entity\User;
 function glen_user_login(User $user) {
 }
 
-function hook_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function glen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id === 'node_article_form') {
+    $node = $form_state
+      ->getFormObject()
+      ->getEntity();
+    $is_new = $node->isNew();
+
+//    node-article-edit-form
+//    \Drupal::messenger()->addMessage('test is: ' . print_r($form));
+
+	    $form['#title'] = $is_new ? t('New Post') : t('Edit Post');
+	    str_replace('Article', 'Post', $form['#title']);
+  }
+
 
 /*
   $request = \Drupal::request();
