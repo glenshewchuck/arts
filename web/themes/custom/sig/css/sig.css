@@ -15,6 +15,11 @@ article.comment .comment__content {
  margin-left: 4em;
 }
 
+.field--name-comment .comment .links-inline span a {
+  font-size: .8em;
+  color: #6c757d !important;
+}
+
 .card-body h3.card-title {
   margin-top: 5px
 }
@@ -142,4 +147,11 @@ ui.media-library-wrapper,
 ui.media-library-wrapper li,
 .media-library-widget-modal #media-library-wrapper ui li {
   margin-right: 1em;
+}
+
+/* masquerade */
+article.comment .comment__meta { 
+  font-size: 0.8em;
+  min-width: 350px !important;
+  margin-left: 5em;
 }

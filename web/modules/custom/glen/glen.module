@@ -10,29 +10,36 @@ use Drupal\user\Entity\User;
 function glen_user_login(User $user) {
 }
 
+/**
+ * Cancel button redirect to front page
+ */
+function glen_button_cancel($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
+  $form_state->setRedirect('<front>');
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Add cancel button on new node form
+ */
 function glen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    switch ($form_id) {
+    case 'node_article_form':
+      $form['#title'] = t('New Post');
+      $form['actions']['cancel'] = array(
+        '#type' => 'submit',
+        '#submit' => array('glen_button_cancel'),
+        '#value' => t('Cancel'),
+	'#limit_validation_errors' => array(),
+        '#weight' => 999,
+        '#button_type' => 'cancel',
+      );
+      break;
+    case 'node_article_edit_form':
+      break;
+    }
 
-  if ($form_id === 'node_article_form') {
-    $node = $form_state
-      ->getFormObject()
-      ->getEntity();
-    $is_new = $node->isNew();
+}
 
-//    node-article-edit-form
 //    \Drupal::messenger()->addMessage('test is: ' . print_r($form));
 
-	    $form['#title'] = $is_new ? t('New Post') : t('Edit Post');
-	    str_replace('Article', 'Post', $form['#title']);
-  }
-
-
-/*
-  $request = \Drupal::request();
-  if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
-    $title = \Drupal::service('title_resolver')->getTitle($request, $route);
-    if ($title == 'Create Article' ) {
-      $route->setDefault('_title', 'New Title');
-    }
-  }
-*/
-}
