@@ -9,7 +9,11 @@
   font-size: 0.8em !important;
 }
 
-/* Indent comments */
+/* comments */
+.inline__links nav.links a {
+  color: #0a58ca;
+}
+
 article.comment .comment__meta,
 article.comment .comment__content {
  margin-left: 4em;

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '19eec64c66a82c4ddac3d8f5be02053092de7eab',
+        'reference' => 'c2d27f62452162bfa02fc14d4cfac055b5a5ee63',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -343,6 +343,15 @@
                 0 => '9.3.14',
             ),
         ),
+        'drupal/better_exposed_filters' => array(
+            'pretty_version' => '5.0.0',
+            'version' => '5.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/better_exposed_filters',
+            'aliases' => array(),
+            'reference' => '8.x-5.0',
+            'dev_requirement' => false,
+        ),
         'drupal/big_pipe' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -390,6 +399,15 @@
             'replaced' => array(
                 0 => '9.3.14',
             ),
+        ),
+        'drupal/change_pwd_page' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/change_pwd_page',
+            'aliases' => array(),
+            'reference' => '8.x-1.0',
+            'dev_requirement' => false,
         ),
         'drupal/ckeditor' => array(
             'dev_requirement' => false,
@@ -874,6 +892,33 @@
             'reference' => '8.x-1.1',
             'dev_requirement' => false,
         ),
+        'drupal/jquery_ui_datepicker' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jquery_ui_datepicker',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
+        'drupal/jquery_ui_slider' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jquery_ui_slider',
+            'aliases' => array(),
+            'reference' => '8.x-1.1',
+            'dev_requirement' => false,
+        ),
+        'drupal/jquery_ui_touch_punch' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jquery_ui_touch_punch',
+            'aliases' => array(),
+            'reference' => '1.0.0',
+            'dev_requirement' => false,
+        ),
         'drupal/jsonapi' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1090,7 +1135,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '19eec64c66a82c4ddac3d8f5be02053092de7eab',
+            'reference' => 'c2d27f62452162bfa02fc14d4cfac055b5a5ee63',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(
@@ -1152,6 +1197,15 @@
             'replaced' => array(
                 0 => '9.3.14',
             ),
+        ),
+        'drupal/show_password' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/show_password',
+            'aliases' => array(),
+            'reference' => '1.0.0',
+            'dev_requirement' => false,
         ),
         'drupal/smtp' => array(
             'pretty_version' => '1.0.0',
