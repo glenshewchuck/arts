@@ -1,0 +1,22 @@
+uuid: b997e166-ca07-498e-afc2-f174f3629a10
+langcode: en
+status: true
+dependencies:
+  theme:
+    - myadmin
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: myadmin_local_tasks
+theme: myadmin
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

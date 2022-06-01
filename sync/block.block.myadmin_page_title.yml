@@ -1,0 +1,25 @@
+uuid: 616c170c-b142-4b18-9ae5-59d8572d0516
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - myadmin
+third_party_settings:
+  block_class:
+    classes: mt-2
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: myadmin_page_title
+theme: myadmin
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

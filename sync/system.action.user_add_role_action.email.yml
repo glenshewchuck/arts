@@ -1,0 +1,14 @@
+uuid: 56cdbf2e-d1f5-4df0-86ac-2d70526a4566
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.email
+  module:
+    - user
+id: user_add_role_action.email
+label: 'Add the Email role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: email

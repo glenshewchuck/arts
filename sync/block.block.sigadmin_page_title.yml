@@ -1,0 +1,25 @@
+uuid: bfc680d6-0686-4c26-b742-090784a8a14e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - sigadmin
+third_party_settings:
+  block_class:
+    classes: mt-2
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: sigadmin_page_title
+theme: sigadmin
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

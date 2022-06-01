@@ -1,0 +1,38 @@
+uuid: e7bbfe9d-cfb6-45ac-8dc9-f498dfd3bb28
+langcode: en
+status: true
+dependencies: {  }
+id: new_articles_posts
+label: 'New Articles/Posts'
+events:
+  -
+    event_name: 'rules_entity_insert:node--article'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 625fc4f3-f43f-47df-affb-439d5d1d6e79
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 8665ff3c-31bf-46b2-bb21-c763c014a6ca
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 5dcb2b63-3488-4935-a57a-a3cd70daa65e
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: fc1637a1-b379-4fb0-ab22-4239f996b6a8
+        weight: 0
+        action_id: rules_page_redirect
+        context_values:
+          url: /
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }

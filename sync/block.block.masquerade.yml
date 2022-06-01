@@ -1,0 +1,20 @@
+uuid: f8412f96-88ec-43ee-ad95-10739dd91672
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+  theme:
+    - sig
+id: masquerade
+theme: sig
+region: footer_first
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  label_display: visible
+  provider: masquerade
+visibility: {  }

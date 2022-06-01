@@ -1,0 +1,22 @@
+uuid: a03d774b-4566-4542-b554-d26bec58b921
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sig
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: sig_local_tasks
+theme: sig
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

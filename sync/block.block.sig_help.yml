@@ -1,0 +1,22 @@
+uuid: e1cb5fda-471b-4989-b2bf-c6aa3a121f65
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sig
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: sig_help
+theme: sig
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

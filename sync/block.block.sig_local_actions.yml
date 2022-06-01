@@ -1,0 +1,20 @@
+uuid: d02d6304-b2dd-485d-8e05-14207dc8cf44
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sig
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: sig_local_actions
+theme: sig
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

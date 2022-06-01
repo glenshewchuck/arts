@@ -1,0 +1,14 @@
+uuid: ed6d5ad4-613e-40a3-a693-65b5f9e1c261
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.email
+  module:
+    - user
+id: user_remove_role_action.email
+label: 'Remove the Email role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: email

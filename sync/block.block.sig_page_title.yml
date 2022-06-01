@@ -1,0 +1,25 @@
+uuid: aae053f8-9168-4a74-918a-a8a9c8346296
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - sig
+third_party_settings:
+  block_class:
+    classes: mt-2
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: sig_page_title
+theme: sig
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Post
+  label_display: '0'
+  provider: core
+visibility: {  }

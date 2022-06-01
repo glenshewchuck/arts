@@ -1,0 +1,10 @@
+uuid: 162f987a-7d4a-422c-a939-72f8ad47c60a
+langcode: en
+status: true
+dependencies: {  }
+id: redirect_to_url
+label: 'Redirect to URL'
+type: system
+plugin: action_goto_action
+configuration:
+  url: '<front>'

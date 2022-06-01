@@ -1,0 +1,21 @@
+uuid: 8a565702-466a-4eaf-adb5-993fb71bc1a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.article
+  module:
+    - text
+id: node.article.field_text
+field_name: field_text
+entity_type: node
+bundle: article
+label: Text
+description: 'For YouTube, please use "Add Media" above to add the link. It will help us to be able to list out all our links later on :)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

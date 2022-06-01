@@ -1,0 +1,59 @@
+uuid: 8a791a89-40b9-4596-8db0-77f09cf54e74
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - node.type.article
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - file
+    - filter
+    - media
+    - node
+    - search
+    - shortcut
+    - system
+    - taxonomy
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access files overview'
+  - 'access shortcuts'
+  - 'access taxonomy overview'
+  - 'access user profiles'
+  - 'change own username'
+  - 'create article content'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create terms in tags'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view the administration theme'

@@ -1,0 +1,19 @@
+uuid: 1a51cd39-e8dd-4f93-92be-e37ef0888308
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - media.type.image
+id: media.image.field_description
+field_name: field_description
+entity_type: media
+bundle: image
+label: Description
+description: 'Description of the media fid'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

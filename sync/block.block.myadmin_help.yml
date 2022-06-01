@@ -1,0 +1,22 @@
+uuid: b6ec0ae7-d4c2-4924-8de0-35be6e737e6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - myadmin
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: myadmin_help
+theme: myadmin
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

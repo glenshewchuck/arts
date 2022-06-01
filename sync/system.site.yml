@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 0014a004-3505-4d7d-b0b7-dddda642b429
+name: 'San Diego Self Inquiry Group'
+mail: glenshewchuck+sig@gmail.com
+slogan: ''
+page:
+  403: /customerror/403
+  404: /customerror/404
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

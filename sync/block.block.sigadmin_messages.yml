@@ -1,0 +1,22 @@
+uuid: 5e63af01-d1ab-4e17-91ed-f80a21b9123e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sigadmin
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: sigadmin_messages
+theme: sigadmin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,18 @@
+palette:
+  top: '#cd2d2d'
+  bottom: '#87b8e3'
+  bg: '#ffffff'
+  sidebar: '#f1f4f0'
+  sidebarborders: '#ededed'
+  footer: '#1f1d1c'
+  button: '#d6121f'
+  buttonhover: '#a90f19'
+  titleslogan: '#fffeff'
+  text: '#888888'
+  link: '#d6121f'
+logo: 'public://color/sig-27bcb380/logo.svg'
+stylesheets:
+  - 'public://color/sig-27bcb380/colors.css'
+files:
+  - 'public://color/sig-27bcb380/logo.svg'
+  - 'public://color/sig-27bcb380/colors.css'

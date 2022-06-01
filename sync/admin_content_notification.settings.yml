@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: lqgpqHWPl_Pw9TRyZ9tqgNM1-ah9HMX3fwfU49_Ihck
+admin_content_notification_node_types:
+  article: article
+  page: null
+admin_content_notification_trigger_on_node_update: true
+admin_content_notification_trigger_on_node_status: 1
+admin_content_notification_allowed_roles:
+  authenticated: authenticated
+  anonymous: null
+  content_editor: null
+  administrator: null
+  email: null
+admin_content_notification_email_limit: 50
+admin_content_notification_email: ''
+admin_content_notification_roles_notified:
+  authenticated: authenticated
+  content_editor: null
+  administrator: null
+  email: null
+admin_content_notification_email_subject: 'Post @action'
+admin_content_notification_email_body: "\"@content_title\" By : @user_who_posted  has been @action on the San Diego Self Inquiry Website.\r\n\r\nPost Text:\r\n[node:body]"

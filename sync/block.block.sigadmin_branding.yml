@@ -1,0 +1,25 @@
+uuid: f046a9d0-4295-451f-ad27-2343422ed62d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - sigadmin
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: sigadmin_branding
+theme: sigadmin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

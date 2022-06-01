@@ -1,0 +1,22 @@
+uuid: 8360da6e-21c3-4f9a-a61c-d644714590d9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sigadmin
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: sigadmin_local_tasks
+theme: sigadmin
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

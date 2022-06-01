@@ -1,0 +1,22 @@
+uuid: eb15ef60-c410-421d-af58-ec066cd2b20a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - myadmin
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: myadmin_messages
+theme: myadmin
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

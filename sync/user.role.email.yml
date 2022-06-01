@@ -1,0 +1,9 @@
+uuid: 024ecd9e-88ce-412a-911f-d868c26a80b2
+langcode: en
+status: true
+dependencies: {  }
+id: email
+label: Email
+weight: 4
+is_admin: null
+permissions: {  }
