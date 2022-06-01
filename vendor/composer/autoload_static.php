@@ -51,6 +51,7 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'Wikimedia\\Composer\\Merge\\V2\\' => 28,
             'Webmozart\\PathUtil\\' => 19,
             'Webmozart\\Assert\\' => 17,
         ),
@@ -103,6 +104,7 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         'R' => 
         array (
             'Robo\\' => 5,
+            'ReCaptcha\\' => 10,
         ),
         'P' => 
         array (
@@ -198,6 +200,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
     );
 
     public static $prefixDirsPsr4 = array (
+        'Wikimedia\\Composer\\Merge\\V2\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src',
+        ),
         'Webmozart\\PathUtil\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/path-util/src',
@@ -369,6 +375,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         'Robo\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/robo/src',
+        ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
         ),
         'Psy\\' => 
         array (

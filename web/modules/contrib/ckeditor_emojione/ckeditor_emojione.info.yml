@@ -1,0 +1,12 @@
+name: CKEditor Emojione
+type: module
+description: 'Adds the emojione plugin to CKEditor.'
+core_version_requirement: ^8.8 || ^9
+package: CKEditor
+dependencies:
+  - drupal:ckeditor
+
+# Information added by Drupal.org packaging script on 2021-04-20
+version: '8.x-1.4'
+project: 'ckeditor_emojione'
+datestamp: 1618900853

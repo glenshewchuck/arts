@@ -1,0 +1,47 @@
+{
+  "name": "drupal/ckeditor_emojione",
+  "description": "Adds the emojione plugin to CKEditor.",
+  "type": "drupal-module",
+  "homepage": "https://drupal.org/project/ckeditor_emojione",
+  "authors": [
+    {
+      "name": "Rasmus Werling (Rade)",
+      "homepage": "https://www.drupal.org/u/rade",
+      "role": "Maintainer"
+    },
+    {
+      "name": "R.J. Townsend (rj)",
+      "homepage": "https://www.drupal.org/u/rj",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://drupal.org/project/issues/ckeditor_emojione",
+    "source": "https://cgit.drupalcode.org/ckeditor_emojione"
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "repositories": {
+    "ckeditor.emojione": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/emojione",
+        "version": "1.0.2",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "emojione"
+        },
+        "dist": {
+          "url": "https://download.ckeditor.com/emojione/releases/emojione_1.0.2.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    }
+  },
+  "require": {
+    "ckeditor/emojione": "*"
+  }
+}

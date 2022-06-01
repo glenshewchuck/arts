@@ -1,0 +1,55 @@
+<?php
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @file
+ * This module integrates the CKEditor Emojione plugin to CKEditor for Drupal 8.
+ * Allows users to add various emojis using a CKEditor dialog.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function ckeditor_emojione_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.ckeditor_emojione':
+      $readme = __DIR__ . '/README.txt';
+      $text = file_get_contents($readme);
+      $output = '';
+
+      // If the Markdown module is installed, use it to render the README.
+      if ($text && \Drupal::moduleHandler()->moduleExists('markdown') === TRUE) {
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        $output = $filter->process($text, 'en');
+      }
+      // Else the Markdown module is not installed output the README as text.
+      else if ($text) {
+        $output = '<pre>' . $text . '</pre>';
+      }
+
+      // Add a link to the Drupal.org project.
+      $output .= '<p>';
+      $output .= t('Visit the <a href=":project_link">CKEditor Emojione page</a> on Drupal.org for more information.',[
+        ':project_link' => 'https://www.drupal.org/project/ckeditor_emojione'
+        ]);
+      $output .= '</p>';
+
+      return $output;
+  }
+
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function ckeditor_emojione_library_info_alter(&$libraries, $extension) {
+  // Add support for "Libraries API" module, if exists.
+  if ($extension == 'link' && \Drupal::moduleHandler()->moduleExists('libraries')) {
+    $path = \Drupal::service('library.libraries_directory_file_finder')
+      ->find('ckeditor_emojione/plugin.js');
+    $libraries['link']['js'] = [$path => []];
+  }
+}
