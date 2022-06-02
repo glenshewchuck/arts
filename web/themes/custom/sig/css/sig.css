@@ -156,6 +156,6 @@ ui.media-library-wrapper li,
 /* masquerade */
 article.comment .comment__meta { 
   font-size: 0.8em;
-  min-width: 350px !important;
+  min-width: 300px !important;
   margin-left: 5em;
 }
