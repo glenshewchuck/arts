@@ -1,0 +1,16 @@
+name: Easy Email
+type: module
+description: A simple system for sending HTML-formatted emails
+package: Mail
+core_version_requirement: ^8.8 || ^9
+configure: entity.easy_email_type.collection
+
+dependencies:
+  - token:token
+  - mailsystem:mailsystem
+  - swiftmailer:swiftmailer
+
+# Information added by Drupal.org packaging script on 2021-01-18
+version: '8.x-1.0-rc2'
+project: 'easy_email'
+datestamp: 1611008437

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function easy_email_install($is_syncing) {
+  if (!$is_syncing) {
+    $settings = Drupal::configFactory()->getEditable('mailsystem.settings');
+    $settings->set('modules.easy_email.none', [
+      'formatter' => 'swiftmailer',
+      'sender' => 'swiftmailer',
+    ])->save();
+  }
+}
+
+/**
+ * Ensure Easy Email's entity revision metadata keys are correct.
+ */
+function easy_email_update_8201() {
+  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  $entity_type = $entity_definition_update_manager->getEntityType('easy_email');
+  $metadata_keys = $entity_type->get('revision_metadata_keys');
+  $metadata_keys = is_array($metadata_keys) ? $metadata_keys : [];
+  $metadata_keys = [
+    'revision_default' => 'revision_default',
+    'revision_user' => 'revision_user',
+    'revision_created' => 'revision_created',
+    'revision_log_message' => 'revision_log_message',
+  ] + $metadata_keys;
+  $entity_type->set('revision_metadata_keys', $metadata_keys);
+  $entity_definition_update_manager->updateEntityType($entity_type);
+}
