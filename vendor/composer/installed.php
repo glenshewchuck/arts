@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd468ef2c397ed07b944cc32de46623d47ed29592',
+        'reference' => '1dfc12ba90f923dde5290a7b885c8b8d05df8dd2',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -763,6 +763,15 @@
                 0 => '9.3.14',
             ),
         ),
+        'drupal/easy_email' => array(
+            'pretty_version' => '1.0.0-rc2',
+            'version' => '1.0.0.0-RC2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/easy_email',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-rc2',
+            'dev_requirement' => false,
+        ),
         'drupal/editor' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -831,6 +840,15 @@
             'replaced' => array(
                 0 => '9.3.14',
             ),
+        ),
+        'drupal/flood_control' => array(
+            'pretty_version' => '2.2.3',
+            'version' => '2.2.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/flood_control',
+            'aliases' => array(),
+            'reference' => '2.2.3',
+            'dev_requirement' => false,
         ),
         'drupal/forum' => array(
             'dev_requirement' => false,
@@ -1009,6 +1027,15 @@
             'reference' => '8.x-1.0-beta1',
             'dev_requirement' => false,
         ),
+        'drupal/mailsystem' => array(
+            'pretty_version' => '4.3.0',
+            'version' => '4.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/mailsystem',
+            'aliases' => array(),
+            'reference' => '8.x-4.3',
+            'dev_requirement' => false,
+        ),
         'drupal/media' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1180,7 +1207,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd468ef2c397ed07b944cc32de46623d47ed29592',
+            'reference' => '1dfc12ba90f923dde5290a7b885c8b8d05df8dd2',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(
@@ -1287,6 +1314,15 @@
             'replaced' => array(
                 0 => '9.3.14',
             ),
+        ),
+        'drupal/swiftmailer' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/swiftmailer',
+            'aliases' => array(),
+            'reference' => '8.x-2.2',
+            'dev_requirement' => false,
         ),
         'drupal/syslog' => array(
             'dev_requirement' => false,
@@ -1460,6 +1496,15 @@
             'install_path' => __DIR__ . '/../guzzlehttp/psr7',
             'aliases' => array(),
             'reference' => '337e3ad8e5716c15f9657bd214d16cc5e69df268',
+            'dev_requirement' => false,
+        ),
+        'html2text/html2text' => array(
+            'pretty_version' => '4.3.1',
+            'version' => '4.3.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../html2text/html2text',
+            'aliases' => array(),
+            'reference' => '61ad68e934066a6f8df29a3d23a6460536d0855c',
             'dev_requirement' => false,
         ),
         'joachim-n/case-converter' => array(
@@ -1781,6 +1826,15 @@
             'reference' => 'a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c',
             'dev_requirement' => false,
         ),
+        'swiftmailer/swiftmailer' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../swiftmailer/swiftmailer',
+            'aliases' => array(),
+            'reference' => '8a5d5072dca8f48460fce2f4131fcc495eec654c',
+            'dev_requirement' => false,
+        ),
         'symfony-cmf/routing' => array(
             'pretty_version' => '2.3.4',
             'version' => '2.3.4.0',
@@ -1821,6 +1875,15 @@
             'install_path' => __DIR__ . '/../symfony/console',
             'aliases' => array(),
             'reference' => '329b3a75cc6b16d435ba1b1a41df54a53382a3f0',
+            'dev_requirement' => false,
+        ),
+        'symfony/css-selector' => array(
+            'pretty_version' => 'v5.4.3',
+            'version' => '5.4.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/css-selector',
+            'aliases' => array(),
+            'reference' => 'b0a190285cd95cb019237851205b8140ef6e368e',
             'dev_requirement' => false,
         ),
         'symfony/debug' => array(
@@ -2154,6 +2217,15 @@
             'install_path' => __DIR__ . '/../symfony/yaml',
             'aliases' => array(),
             'reference' => '2c309e258adeb9970229042be39b360d34986fad',
+            'dev_requirement' => false,
+        ),
+        'tijsverkoyen/css-to-inline-styles' => array(
+            'pretty_version' => '2.2.4',
+            'version' => '2.2.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tijsverkoyen/css-to-inline-styles',
+            'aliases' => array(),
+            'reference' => 'da444caae6aca7a19c0c140f68c6182e337d5b1c',
             'dev_requirement' => false,
         ),
         'twbs/bootstrap' => array(
