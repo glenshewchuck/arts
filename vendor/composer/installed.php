@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd468ef2c397ed07b944cc32de46623d47ed29592',
+        'reference' => '1dfc12ba90f923dde5290a7b885c8b8d05df8dd2',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -832,6 +832,15 @@
                 0 => '9.3.14',
             ),
         ),
+        'drupal/flood_control' => array(
+            'pretty_version' => '2.2.3',
+            'version' => '2.2.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/flood_control',
+            'aliases' => array(),
+            'reference' => '2.2.3',
+            'dev_requirement' => false,
+        ),
         'drupal/forum' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1180,7 +1189,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd468ef2c397ed07b944cc32de46623d47ed29592',
+            'reference' => '1dfc12ba90f923dde5290a7b885c8b8d05df8dd2',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(

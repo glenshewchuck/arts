@@ -38,6 +38,7 @@
         "drupal/extlink": "^1.6",
         "drupal/field_group": "^3.2",
         "drupal/file_delete": "^1.0",
+        "drupal/flood_control": "^2.2",
         "drupal/gin": "^3.0@beta",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui_accordion": "^1.1",
