@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a9c6e420cd0729c207f3680e7acd5d52743e28b1',
+        'reference' => '4b9cd3aa98a3c1e50ac42669bd74d74033db5995',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -161,6 +161,15 @@
             'install_path' => __DIR__ . '/../consolidation/site-process',
             'aliases' => array(),
             'reference' => '9ef08d471573d6a56405b06ef6830dd70c883072',
+            'dev_requirement' => false,
+        ),
+        'cweagans/composer-patches' => array(
+            'pretty_version' => '1.7.2',
+            'version' => '1.7.2.0',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../cweagans/composer-patches',
+            'aliases' => array(),
+            'reference' => 'e9969cfc0796e6dea9b4e52f77f18e1065212871',
             'dev_requirement' => false,
         ),
         'dflydev/dot-access-data' => array(
@@ -1207,7 +1216,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a9c6e420cd0729c207f3680e7acd5d52743e28b1',
+            'reference' => '4b9cd3aa98a3c1e50ac42669bd74d74033db5995',
             'dev_requirement' => false,
         ),
         'drupal/redirect_after_login' => array(
@@ -1342,6 +1351,15 @@
                 0 => '9.3.14',
             ),
         ),
+        'drupal/taxonomy_manager' => array(
+            'pretty_version' => '2.0.7',
+            'version' => '2.0.7.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/taxonomy_manager',
+            'aliases' => array(),
+            'reference' => '2.0.7',
+            'dev_requirement' => false,
+        ),
         'drupal/telephone' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1401,6 +1419,15 @@
             'replaced' => array(
                 0 => '9.3.14',
             ),
+        ),
+        'drupal/vartheme_bs5' => array(
+            'pretty_version' => '1.0.0-rc2',
+            'version' => '1.0.0.0-RC2',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/vartheme_bs5',
+            'aliases' => array(),
+            'reference' => '1.0.0-rc2',
+            'dev_requirement' => false,
         ),
         'drupal/views' => array(
             'dev_requirement' => false,
@@ -1613,6 +1640,15 @@
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
             'reference' => '210577fe3cf7badcc5814d99455df46564f3c077',
+            'dev_requirement' => false,
+        ),
+        'oomphinc/composer-installers-extender' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../oomphinc/composer-installers-extender',
+            'aliases' => array(),
+            'reference' => 'cbf4b6f9a24153b785d09eee755b995ba87bd5f9',
             'dev_requirement' => false,
         ),
         'orno/di' => array(

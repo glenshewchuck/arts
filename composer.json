@@ -58,7 +58,9 @@
         "drupal/show_password": "^1.0",
         "drupal/smtp": "^1.0",
         "drupal/swiftmailer": "^2.2",
+        "drupal/taxonomy_manager": "^2.0",
         "drupal/token": "^1.10",
+        "drupal/vartheme_bs5": "^1.0@RC",
         "drush/drush": "^11.0",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
@@ -73,7 +75,9 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "wikimedia/composer-merge-plugin": true
+            "wikimedia/composer-merge-plugin": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "extra": {

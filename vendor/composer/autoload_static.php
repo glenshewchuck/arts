@@ -50,6 +50,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'W' => 
         array (
             'Wikimedia\\Composer\\Merge\\V2\\' => 28,
@@ -119,6 +123,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
             'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'O' => 
+        array (
+            'OomphInc\\ComposerInstallersExtender\\' => 36,
         ),
         'M' => 
         array (
@@ -207,6 +215,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
     );
 
     public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
         'Wikimedia\\Composer\\Merge\\V2\\' => 
         array (
             0 => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src',
@@ -427,6 +439,10 @@ class ComposerStaticInitb4c2ec85143ef65661ba557f63752ad6
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'OomphInc\\ComposerInstallersExtender\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/oomphinc/composer-installers-extender/src',
         ),
         'MutableTypedData\\Test\\' => 
         array (
