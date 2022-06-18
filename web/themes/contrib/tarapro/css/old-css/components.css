@@ -1,0 +1,597 @@
+/* Text align
+-------------------------------------------- */
+.text_left,
+.text-left {
+  text-align: left;
+}
+.text_right,
+.text-right {
+  text-align: right;
+}
+.text_center,
+.text-center {
+  text-align: center;
+}
+
+/* Text Size
+-------------------------------------------- */
+.size-2x {
+  font-size: 2em;
+}
+.size-3x {
+  font-size: 3em;
+}
+.size-4x {
+  font-size: 4em;
+}
+.size-5x {
+  font-size: 5em;
+}
+.size-6x {
+  font-size: 6em;
+}
+.size-7x {
+  font-size: 7em;
+}
+.size-8x {
+  font-size: 8em;
+}
+
+/* Text Color
+-------------------------------------------- */
+.theme-color {
+  color: #dc5431;
+}
+.theme-bg {
+  background: #dc5431;
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
+}
+
+/* Button.
+-------------------------------------------- */
+/* Button -> Default */
+.button, a.button,
+.button-dark, a.button-dark,
+.button-round, a.button-round,
+.button-outline, a.button-outline {
+  position: relative;
+  display: inline-block;
+  padding: 7px 16px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.button, a.button,
+.button-round, a.button-round, .button-round[disabled] {
+  background: #dc5431;
+  color: #fff;
+}
+.button:hover, a.button:hover,
+.button-round:hover, a.button-round:hover, .button-round[disabled]:hover,
+.button-dark, a.button-dark, .button-dark[disabled] {
+  background: #222222;
+	color: #ffffff;
+}
+.button-dark:hover, a.button-dark:hover {
+  background: #dc5431;
+}
+.button-round, a.button-round, .button-round[disabled] {
+  border-radius: 30px;
+}
+.button-outline, a.button-outline, .button-outline[disabled] {
+  background: transparent;
+  color: #222;
+  border: 2px solid #dc5431;
+}
+.button-outline:hover, a.button-outline:hover {
+  background: transparent;
+  border: 2px solid #222;
+  color: #dc5431;
+}
+.button-animate, a.button-animate, .button-animate[disabled],
+.button-animate:hover, a.button-animate:hover, .button-animate[disabled]:hover {
+  position: relative;
+  background: transparent;
+  color: #222;
+  border: 0;
+  padding: 10px 20px 10px 0;
+}
+.button-animate::after, a.button-animate::after, .button-animate[disabled]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background: #dc5431;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.button-animate:hover::after,
+a.button-animate:hover::after,
+.button-animate[disabled]:hover::after {
+  width: 100%;
+}
+.round {
+  border-radius: 30px;
+}
+.button.dark {
+  background: #222222;
+}
+.button.dark:hover {
+  background: #dc5431;
+}
+
+/* column
+-------------------------------------------- */
+.one_half, .one_three, .one_four,
+.one-half, .one-three, .one-four,
+.two_three, .two-three {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 20px 15px;
+}
+.full {
+  position: relative;
+  width: 100%;
+  margin: 0 0 24px 0;
+  padding: 0;
+  clear: both;
+}
+.one_half, .one-half {
+  width: 50%;
+}
+.one_three, .one-three {
+  width: 33.3%;
+}
+.one_four, .one-four {
+  width: 25%;
+}
+.one_four_first {
+  width: 25%;
+  margin: 0;
+  padding: 10px 2%;
+}
+.one_four_last, .one-four-last {
+	width: 25%;
+  margin: 0;
+  padding: 10px 0 10px 2%;
+}
+.two_three, .two-three {
+  width: 66.6%;
+}
+.last {
+  padding-right: 0;
+}
+
+/* Dropcap
+-------------------------------------------- */
+.dropcap:first-letter {
+  float: left;
+  background: #dc5431;
+  color: #fff;
+  font-size: 1.6em;
+  line-height: 1;
+  padding: 8px 18px;
+  margin: 0 6px 0 0;
+}
+
+/* Pricing table.
+-------------------------------------------- */
+.pricing {
+  position: relative;
+}
+.plan-name {
+  background: #dc5431;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+}
+.plan-price {
+  text-align: center;
+  color: #222;
+  background: #ddd;
+  font-size: 1.6em;
+}
+ul.plan-details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.plan-details li {
+  border-top: 1px solid #ddd;
+}
+
+/* Message Box
+-------------------------------------------- */
+.box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #dcd9d6;
+  box-shadow: 2px 4px 2px #c7c2b7;
+}
+.box i {
+  color: #dc5431;
+  transition: all 0.8s ease;
+}
+
+/* Page Loader
+-------------------------------------------- */
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+  opacity: .8;
+}
+
+/* Share Node
+-------------------------------------------- */
+.share-node {
+  position: relative;
+  width: 100%;
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+h3.share-node-title {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+.share-node-title i {
+  color: #dc5431;
+}
+
+/* Scroll To Top
+-------------------------------------------- */
+.scrolltop {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  bottom: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.scrolltop i {
+  font-size: 1.6em;
+}
+.scrolltop:hover {
+  background: #dc5431;
+}
+
+/* Cookies Popup message
+-------------------------------------------- */
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: #dc5431;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0 !important;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+}
+.cookiealert p {
+  margin: 0;
+}
+.cookiealert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+.cookiealert button {
+  background: #111;
+}
+
+/* Elements
+-------------------------------------------- */
+/* Elements -> Accordion */
+.accordion, .toggle {
+  position: relative;
+}
+.accordion-title,
+.toggle-title {
+  display: block;
+  color: #222222;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #c9c6c2;
+  cursor: pointer;
+}
+.accordion-title::before,
+.toggle-title::before {
+  content: '+';
+  display: inline-block;
+  color: #dc5431;
+  width: 34px;
+  text-align: center;
+}
+.accordion-content,
+.toggle-content {
+  padding: 10px 5px;
+  margin:0;
+}
+.active-toggle,
+.active-accordion {
+  color: #dc5431;
+}
+.active-toggle::before,
+.active-accordion::before {
+  content: '-';
+}
+
+/* Elements -> tabs */
+ul.tabs {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul.tabs li {
+  display: inline-block;
+}
+ul.tabs li a {
+  padding: 6px 20px;
+}
+.active-tab a {
+  color: #222222;
+}
+.active-tab a {
+  border-top: 3px solid #dc5431;
+  border-bottom: 3px solid #dc5431;
+}
+.tab-content {
+  display: none;
+  margin-top: 2px;
+  padding: 14px;
+  border: 2px solid #c9c6c2;
+  border-top: 1px solid #c9c6c2;
+}
+.active-tab-content {
+  display: block;
+}
+
+/* Elements -> Divider */
+.line,
+.line-double,
+.line-dash,
+.line-dot {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  clear: both;
+  display: table;
+  height: 8px;
+}
+.line {
+  border-top: 2px solid #c9c6c2;
+}
+.line-double {
+  border-top: 4px double #c9c6c2;
+}
+.line-dash {
+  border-top: 1px dashed #c9c6c2;
+  border-bottom: 1px dashed #c9c6c2;
+}
+.line-dot {
+  border-top: 2px dotted #c9c6c2;
+  border-bottom: 2px dotted #c9c6c2;
+}
+
+/* Elements -> Call To Action */
+.call-to-action {
+  position: relative;
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  padding: 30px;
+  margin: 10px 0 20px 0;
+  border: 4px solid #fff;
+}
+.call-to-action .one-half,
+.call-to-action .one-three,
+.call-to-action .two-three,
+.call-to-action .one-four {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+/* Elements -> Clients */
+.clients.owl-carousel .owl-stage {
+  display: flex;
+}
+.clients.owl-carousel .owl-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Elements -> Gallery */
+.clients.owl-carousel .owl-item img,
+.gallery-slider.owl-carousel .owl-item img {
+  width: auto;
+}
+
+/* Elements -> Testimonials */
+.testimonials .item {
+  position: relative;
+  background: #fff;
+  border: 1px solid #c9c6c2;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.8;
+}
+.testimonials .item::before {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  content: '\f10d';
+  font-family: "FontAwesome";
+  color: #b9b9b9;
+  font-size: 2em;
+  transition: all 0.5s ease;
+}
+.testimonials .item .name {
+  color: #2c2c2c;
+  font-family: 'Roboto', sans-serif;
+}
+.testimonials .item .firm {
+  color: #b9b9b9;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease;
+}
+.testimonials .item:hover::before,
+.testimonials .item:hover .firm {
+  color: #dc5431;
+}
+
+/* Elements -> Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.banner img {
+  position: relative;
+}
+.banner .banner-message {
+  position: absolute;
+  display: table;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+/* Elements -> Text box */
+.text-box {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #c9c6c2;
+  box-shadow: 2px 2px 2px #a1a1a1;
+}
+
+/* Elements -> Icon box */
+.icon-box,
+.icon-box2 {
+  position: relative;
+  background: #eaeae2;
+}
+.icon-box i,
+.icon-box2 .icon i {
+  font-size: 2.6em;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.icon-box:hover i,
+.icon-box2:hover .icon i {
+  color: #dc5431;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.icon-box {
+  text-align: center;
+  padding: 50px 30px 30px 30px;
+}
+.icon-box i {
+  display: block;
+  margin-bottom: 30px;
+}
+.icon-box2 {
+  padding: 30px 20px;
+}
+.icon-box2 .icon {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.icon-box2 .box-content {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Elements -> popup */
+.popup-content {
+  display: none;
+}
+.popup-content.active {
+  display: block;
+  background: #ddd;
+  z-index: 99;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px #969696;
+}
+
+/* Dark Elements */
+.dark {
+  background: #404040;
+  color: #fff;
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+.theme h1, .theme h2, .theme h3, .theme h4, .theme h5, .theme h6 {
+  color: #ffffff;
+}
+.dark a,
+.theme a {
+  color: #ffffff;
+  border-bottom: 1px dashed #000;
+}
+.dark .button, .dark a.button {
+  border: none;
+}
+
+/* Theme color Elements */
+.theme {
+  background: #dc5431;
+  color: #fff;
+}
+.theme .button, .theme a.button {
+  border: none;
+  background: #222;
+}
+.theme .button:hover, .theme a.button:hover {
+  background: #fff;
+  color: #dc5431;
+}

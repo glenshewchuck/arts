@@ -3,6 +3,15 @@
  * Subtheme specific CSS.
  */
 
+
+#page-wrapper #header nav .navbar-brand img {
+  max-width: 150px;
+}
+
+/* ============================================================== */
+/* Below is from SIGSD                                            */
+/* ============================================================== */
+
 /* Content type: Article */
 .X body.path-frontpage .view-frontpage .view-content.row article footer {
   font-style: italic !important;
@@ -154,7 +163,7 @@ ui.media-library-wrapper li,
 }
 
 /* masquerade */
-article.comment .comment__meta { 
+article.comment .comment__meta {
   font-size: 0.8em;
   min-width: 300px !important;
   margin-left: 5em;

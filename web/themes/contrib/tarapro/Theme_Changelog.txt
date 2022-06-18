@@ -1,0 +1,201 @@
++===============================+
+Version 8.1.1
+16 Feb, 2019
++===============================+
+# Intial version released
+
+
++===============================+
+Version 8.1.2
+03 Mar, 2019
++===============================+
+# Fixed slider issue for mobile devices.
+# Added Cookie consent feature.
+
+
++===============================+
+Version 8.1.3
+10 Mar, 2019
++===============================+
+# Fixed slider bug.
+# Vertical middle align main menu in header.
+# Fixed color module integration.
+
+
++===============================+
+Version 8.1.4
+30 Mar, 2019
++===============================+
+# Fixed links inline display.
+# Added icons in inline items.
+# Added tutorial link for font icons.
+# Better display of nodes in teaser view.
+# Added option to show tags in node submitted details.
+  Theme settings -> Content -> Show node tags
+
+
++===============================+
+Version 8.1.5
+05 May, 2019
++===============================+
+# Fixed jQuery error in console if homepage slider is disabled.
+# More options for "Share node" in theme settings.
+# Better status message styling.
+# Added styling for book module.
+
+
++===============================+
+Version 8.2.1
+30 May, 2019
++===============================+
+# Fixed mobile menu height issue.
+# Fixed slider height issue in mobile devices.
+# Removed sticky header from mobile devices.
+# Better image alignment in mobile devices.
+# More color options.
+# New options for slider settings.
+# Added Iconmonstr Font Icons.
+# Added font size shortcodes.
+# Added font color shortcodes.
+# Added option for slider interval time and dots navigation.
+# Added option for "Additional CSS" in theme settings.
+# Added Accordion shortcode.
+# Added Banner shortcodes.
+# Added more button styles shortcodes.
+# Added 'call to action' shortcodes.
+# Added new column shortcode.
+# Added Divider shortcodes.
+# Added Image Gallery shortcode.
+# Added Icon box shortcodes.
+# Added Popup shortcode.
+# Added new message shortcodes.
+# Added Tab shortcode.
+# Added Testimonials shortcode.
+# Added Text box shortcode.
+# Added new social icon vk.com, whatsapp, github, telegram.
+
+
++===============================+
+Version 8.2.2
+15 Feb, 2020
++===============================+
+# Fixed minor known bugs
+# Better slider positioning for mobile devices in landscape view.
+# Replaced default logo format from PNG to SVG.
+
+
+
++===============================+
+Version 8.3.0
+10 June, 2020
++===============================+
+# Compatible on Drupal 9.x.x also.
+# Added option to load Google fonts locally or from Google CDN server.
+# Added vimeo social icon.
+# Added option to add more social icons from theme settings.
+
+
+
++===============================+
+Version 8.3.1
+16 June, 2020
++===============================+
+# Fixed the bug which was breaking the theme in version 8.3.0
+
+
+
++===============================+
+Version 8.3.2
+03 July, 2020
++===============================+
+# Added option to enable or disable fixed footer.
+
+
++===============================+
+Version 8.3.3
+11 July, 2020
++===============================+
+# Fixed breadcrumb appearance issue.
+
+
++===============================+
+Version 8.3.4
+05 Sep, 2020
++===============================+
+# Fixed homepage slider known bug.
+# Added option to show sidebar on homepage.
+
+
++===============================+
+Version 8.3.5
+27 Nov, 2020
++===============================+
+# Fixed inline label display bug.
+# Fixed long text bug in main menu.
+# Removed Google Plus for node sharing.
+
+
++===============================+
+Version 8.3.6
+25 Feb, 2021
++===============================+
+# Fixed minor known bugs.
+# Added sass files.
+# Added FontAwesome 5 font icons. This can be enabled from theme settings.
+# Added maintenance library.
+# Added option to insert custom codes in <head> and <body> sections from theme settings.
+# Moved "Additions css" under "Insert codes" in theme settings.
+# New Styling for site branding block.
+# New grid based layout for main and sidebar.
+
+
++===============================+
+Version 8.3.7
+05 April, 2021
++===============================+
+# Fixed background color not changing from theme settings.
+# Fixed twitter share issue.
+
+
++===============================+
+Version 8.3.8
+20 April, 2021
++===============================+
+# Fixed main menu drop down issue.
+# Added Google Material Font icons. This can be enabled from theme settings.
+
+
++===============================+
+Version 8.3.9
+06 May, 2021
++===============================+
+# Flex based layout for services, projects shortcodes.
+# Added shortcode for inline content.
+# Added shortcode for responsive view.
+# Added shortcode for content direction.
+# New flex based column shortcode:
+https://www.drupar.com/tarapro-documentation/column
+
+
++===============================+
+Version 8.4.0
+13 July, 2021
++===============================+
+# Removed jQuery from head and moved to the bottom.
+
+
++===============================+
+Version 8.4.1
+17 Aug, 2021
++===============================+
+# Fixed Google material font icons bug.
+# Fixed other minor known bugs.
+
+
+
++===============================+
+Version 8.4.2
+24 Aug, 2021
++===============================+
+# Fixed fontawesome 5 conflict with fontawesome 4 font icons.
+# Fixed other minor known bugs.
