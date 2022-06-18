@@ -25,7 +25,7 @@
 
       {% for filename, filename_content in filename_list %}
         <tr{% if attribute(filename_content, '#warn') %} class="color-warning"{% endif %}>
-          <td class="filename">{{ filename_content.filename }}</td>
+          <td class="filename">{{ generate[filename] }}</td>
           <td>{{ filename_content.merge }}</td>
           <td>{{ filename_content.version_control }}</td>
           <td>{{ filename_content.show }}</td>

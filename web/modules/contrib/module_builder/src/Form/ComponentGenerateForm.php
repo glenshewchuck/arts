@@ -137,11 +137,11 @@ class ComponentGenerateForm extends ComponentFormBase {
 
     // The 'write selected' button needs at least one file to be selected.
     if ($form_state->getTriggeringElement()['#name'] == 'write_selected') {
-      $values = $form_state->getValue('filename_list');
+      $values = $form_state->getValue('generate');
       $files_to_write = array_filter($values);
 
       if (empty($files_to_write)) {
-        $form_state->setError($form['files']['filename_list'], $this->t("At least one file must be selected to write."));
+        $form_state->setError($form['files']['generate'], $this->t("At least one file must be selected to write."));
       }
     }
   }
@@ -235,7 +235,7 @@ class ComponentGenerateForm extends ComponentFormBase {
    * Submit callback to write only the selected files.
    */
   public function writeSelected(array $form, FormStateInterface $form_state) {
-    $values = $form_state->getValue('filename_list');
+    $values = $form_state->getValue('generate');
     $files_to_write = array_filter($values);
 
     $drupal_relative_module_dir = \Drupal::service('module_builder.module_file_writer')->getRelativeModuleFolder($this->entity->id());

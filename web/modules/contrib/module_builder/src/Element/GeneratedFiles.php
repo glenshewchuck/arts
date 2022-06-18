@@ -81,7 +81,7 @@ class GeneratedFiles extends FormElement {
    * Element process callback.
    */
   public static function processFiles(&$element, FormStateInterface $form_state, &$complete_form) {
-    $element['filename_list'] = [
+    $element['generate'] = [
       '#tree' => TRUE,
     ];
 
@@ -92,7 +92,9 @@ class GeneratedFiles extends FormElement {
     ];
 
     foreach ($element['#files'] as $filename => $code) {
-      $element['filename_list'][$filename]['filename'] = [
+      $element['filename_list'][$filename] = [];
+
+      $element['generate'][$filename] = [
         '#type' => 'checkbox',
         '#title' => $filename,
         '#attributes' => [

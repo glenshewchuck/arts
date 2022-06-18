@@ -5,7 +5,7 @@ package: Testing
 core: 8.x
 core_version_requirement: '^8 || ^9'
 
-# Information added by Drupal.org packaging script on 2022-04-25
-version: '8.x-3.23'
+# Information added by Drupal.org packaging script on 2022-05-13
+version: '8.x-3.24'
 project: 'module_builder'
-datestamp: 1650881770
+datestamp: 1652477120
