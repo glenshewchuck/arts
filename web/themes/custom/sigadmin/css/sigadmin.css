@@ -3,9 +3,9 @@ header.content-header {
   margin-top: 50px;
 }
 
-/** 
+/**
  * On media modal make it more apparent that you have to choose a type on the
- * left side using color 
+ * left side using color
  **/
 #media-library-wrapper .media-library-menu__link {
   font-weight: bold;
@@ -14,3 +14,8 @@ header.content-header {
 #media-library-wrapper .media-library-menu__link.active {
   color: green;
 }
+
+.views-exposed-form input[type=submit][value=Filter] {
+  background-color: DarkSeaGreen;
+}
+

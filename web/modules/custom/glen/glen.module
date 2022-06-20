@@ -34,7 +34,9 @@ function glen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_stat
 function glen_user_format_name_alter(&$name, $account) {
   // I don't want to show any names, but still want to show date
   if (!\Drupal::service('router.admin_context')->isAdminRoute()) {
-    $name = '101 Artists Colony';
+    if ($name != 'editor') {
+      $name = '101 Artists Colony';
+    }
   }
 }
 
