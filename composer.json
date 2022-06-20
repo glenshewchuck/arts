@@ -24,6 +24,7 @@
         "drupal/better_exposed_filters": "^5.0",
         "drupal/block_class": "^1.3",
         "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bulk_update_fields": "2.x-dev@dev",
         "drupal/captcha": "^1.2",
         "drupal/change_pwd_page": "^1.0",
         "drupal/ckeditor_emojione": "^1.4",
@@ -35,18 +36,23 @@
         "drupal/ctools": "^3.7",
         "drupal/customerror": "^1.0@beta",
         "drupal/devel": "^4.1",
+        "drupal/dropzonejs": "^2.6",
         "drupal/easy_email": "^1.0@RC",
+        "drupal/exclude_node_title": "^1.3",
         "drupal/extlink": "^1.6",
         "drupal/field_group": "^3.2",
         "drupal/file_delete": "^1.0",
         "drupal/flood_control": "^2.2",
+        "drupal/fontawesome": "^2.23",
         "drupal/gin": "^3.0@beta",
+        "drupal/imagemagick": "^3.3",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui_accordion": "^1.1",
         "drupal/libraries": "^3.0@beta",
         "drupal/maillog": "^1.0@beta",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_library_theme_reset": "^1.1",
+        "drupal/media_pdf_thumbnail": "^5.0",
         "drupal/module_builder": "^3.23",
         "drupal/module_filter": "^3.2",
         "drupal/password_policy": "^3.1",
@@ -63,8 +69,13 @@
         "drupal/taxonomy_manager": "^2.0",
         "drupal/token": "^1.10",
         "drupal/vartheme_bs5": "^1.0@RC",
+        "drupal/views_bulk_edit": "^2.6",
         "drupal/views_bulk_operations": "^4.1",
+        "drupal/views_taxonomy_term_name_depth": "^7.0",
+        "drupal/webform": "^6.1",
         "drush/drush": "^11.0",
+        "enyo/dropzone": "^5.7",
+        "spatie/pdf-to-image": "^2.2",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
@@ -86,7 +97,8 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "web/modules/contrib/ckeditor_emojione/composer.libraries.json"
+                "web/modules/contrib/ckeditor_emojione/composer.libraries.json",
+                "web/modules/contrib/dropzonejs/composer.libraries.json"
             ]
         },
         "drupal-scaffold": {

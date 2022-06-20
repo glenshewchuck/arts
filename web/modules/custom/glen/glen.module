@@ -5,19 +5,6 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Drupal\user\Entity\User;
 
 /**
- * Implements hook_user_login().
- */
-function glen_user_login(User $user) {
-}
-
-/**
- * Cancel button redirect to front page
- */
-function glen_button_cancel($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
-  $form_state->setRedirect('<front>');
-}
-
-/**
  * Implements hook_form_alter().
  *
  * Add cancel button on new node form
@@ -39,6 +26,16 @@ function glen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_stat
       break;
     }
 
+}
+
+/**
+ * Implements hook_user_format_name_alter().
+ */
+function glen_user_format_name_alter(&$name, $account) {
+  // I don't want to show any names, but still want to show date
+  if (!\Drupal::service('router.admin_context')->isAdminRoute()) {
+    $name = '101 Artists Colony';
+  }
 }
 
 //    \Drupal::messenger()->addMessage('test is: ' . print_r($form));

@@ -1,0 +1,15 @@
+glen-library:
+  version: 1.x
+  css:
+    layout:
+      css/bootstrap.min.css: {}
+      css/bootstrap.grid.min.css: {}
+      css/bootstrap.reboot.min.css: {}
+      css/bootstrap.utilities.min.css: {}
+    theme:
+      css/cuddly-slider-theme.css: {}
+  js:
+    js/bootstrap.bundle.min.js: {}
+    js/bootstrap.esm.min.js: {}
+    js/bootstrap.min.js: {}
+
