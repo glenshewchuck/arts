@@ -5,7 +5,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Custom setting for TaraPro theme.
  */
 function tarapro_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state, $form_id = NULL) {
-	$theme_update_info = file_get_contents("https://drupar.com/theme-update-info/tarapro.txt");
+
   $form['#attached']['library'][] = 'tarapro/theme-settings';
   $form['tarapro'] = [
     '#type'       => 'vertical_tabs',
@@ -33,7 +33,7 @@ function tarapro_form_system_theme_settings_alter(&$form, FormStateInterface &$f
     '#group' => 'tarapro',
   ];
 
-  // Main Tabs -> Slider
+  // Main Tabs -> Slidr
   $form['slider'] = [
     '#type'  => 'details',
     '#title' => t('Homepage Slider'),
@@ -759,7 +759,8 @@ function tarapro_form_system_theme_settings_alter(&$form, FormStateInterface &$f
   $form['update']['update_info'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Latest TaraPro Version'),
-    '#description' => t("<pre>$theme_update_info</pre>"),
+    '#description' => t("<pre>Not Available at this moment dude</pre>"),
+    //'#description' => t("<pre>$theme_update_info</pre>"),
   ];
   /**
    * Settings under support tab.
