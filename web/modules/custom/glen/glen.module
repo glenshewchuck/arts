@@ -10,21 +10,24 @@ use Drupal\user\Entity\User;
  * Add cancel button on new node form
  */
 function glen_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-    switch ($form_id) {
+  switch ($form_id) {
     case 'node_article_form':
       $form['#title'] = t('New Post');
-      $form['actions']['cancel'] = array(
+      $form['actions']['cancel'] = [
         '#type' => 'submit',
-        '#submit' => array('glen_button_cancel'),
+        '#submit' => ['glen_button_cancel'],
         '#value' => t('Cancel'),
-	'#limit_validation_errors' => array(),
+        '#limit_validation_errors' => [],
         '#weight' => 999,
         '#button_type' => 'cancel',
-      );
+      ];
+      break;
+    case 'webform_submission_contact_add_form':
+      \Drupal::service('honeypot')->addFormProtection($form, $form_state, ['honeypot', 'time_restriction']);
       break;
     case 'node_article_edit_form':
       break;
-    }
+  }
 
 }
 
