@@ -19,3 +19,16 @@ header.content-header {
   background-color: DarkSeaGreen;
 }
 
+/* make the dividing line between installed and not themes bigger */
+#system-themes-page .system-themes-list.system-themes-list--uninstalled {
+  opacity:0.6;
+}
+
+#system-themes-page h2 {
+  margin-top: 80px;
+}
+
+#system-themes-page hr {
+  background-color: green;
+  height: 50px;
+}

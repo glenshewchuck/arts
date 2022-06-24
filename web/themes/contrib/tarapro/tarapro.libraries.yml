@@ -9,6 +9,7 @@ global-styling:
     theme:
       css/style.css: {}
       css/colors.css: {}
+      css/bootstrap-spacing.css: {}
   js:
     js/slider.js: {}
     js/viewportchecker.js: {}
